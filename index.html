@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form class="container">
+        
+        <div class="element">
+            <label for="title">Животные</label>
+            <select onchange="showOption(this)" name="select" >
+                <option value="Рыбы">Рыбы</option>
+                <option value="Млекопитающие">Млекопитающие</option>
+            </select>
+        </div>
+        <div id="spisok">
+            <div>
+                <label for="title">Название</label> 
+                <input type="text" value="">
+            </div>
+            <div>
+                <label for="title">Способ питания</label> <!-- гетеротрофы -->
+                <input type="text" value="гетеротрофы">
+            </div>
+            <div>
+                <label for="title">Ядра в клетках</label> <!-- эукариоты -->
+                <input type="text" value="эукариоты">
+            </div>
+            <div>
+                <label for="title">Каркас</label> <!-- скелет -->
+                <input type="text" value="скелет">
+            </div>
+            <div>
+                <label for="title">Cистемы органов</label> <!-- нервная -->
+                <input type="text" value="нервная">
+            </div>
+            <div>
+                <label for="title">Симметрия тела</label> <!-- симметрично -->
+                <input type="text" value="симметрично">
+            </div>
+            <div>
+                <label for="title">Рост тела</label> <!-- Ограничен  -->
+                <input type="text" value="Ограничен">
+            </div>
+            <div>
+                <label for="title">Дыхание</label> 
+                <input type="text" value="">
+            </div>
+        </div>
+        <div class="save_clear">    
+            <input id="save" type="button" value="Сохранить">
+            <input id="clear" type="button" value="Удылить">
+        </div>
+
+    </form>
+
+
+    <div id="glavnaia_stranica">
+
+    </div>
+
+<script src="./script.js"></script>
+<script src="./fish.js"></script>
+<script src="./Mlekopitauchie.js"></script>
+</body>
+</html>

@@ -1,15 +1,32 @@
-.container{
-   
+.head_list, ul{
+    display: flex;
+    justify-content: space-between;
 }
 
+.head_list li{
+    display: inline-flex;
+    justify-content: center;
+   /*  width: 20%; */
+    color: blue;
+}
 
-.element{
+.container_Forms{
     display: flex;
+    justify-content: space-between;
+}
+
+.error{
+    background-color: red;
+    color: aqua;
+}
+.ok{
+    background-color: rgb(6, 243, 6);
+    color: aqua;
 }
 input{
-    
+    display:block;
 }
 
-label{
-    width: 150px;
+#list-animals, ul.head_list{
+    padding: 0;
 }

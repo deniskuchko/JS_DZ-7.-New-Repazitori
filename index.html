@@ -7,63 +7,68 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <form class="container">
-        
-        <div class="element">
-            <label for="title">Животные</label>
-            <select onchange="showOption(this)" name="select" >
-                <option value="Рыбы">Рыбы</option>
-                <option value="Млекопитающие">Млекопитающие</option>
-            </select>
+
+    <div class="container">
+        <div class="container_Forms">
+            <form id="mains">
+                <div>
+                    <label for="name">Название </label>
+                    <input type="text" id="name" >
+                </div>
+                <div>
+                    <label for="pitanie">способ питания</label>
+                    <input type="text" id="pitanie" value="Гетеротрофы">
+                </div>
+                <div>
+                    <label for="iadro">Ядра в клетках</label>
+                    <input type="text" id="iadro" value="Эукариоты">
+                </div>
+                <div>
+                    <label for="karkas">Каркас</label>
+                    <input type="text" id="karkas" value="Скелет">
+                </div>
+                
+                <div>
+                    <label for="organs">Система органов</label>
+                    <input type="text" id="organs" value="Нервная">
+                </div>
+                <div>
+                    <label for="simmetria">Симметрия тела</label>
+                    <input type="text" id="simmetria" value="Симметрисное">
+                </div>
+                <div>
+                    <label for="rost">Рост тела</label>
+                    <input type="text" id="rost" value="Ограничен">
+                </div>
+                <div>
+                    <label for="dihanie">Дыхание</label>
+                    <input type="text" id="dihanie">
+                </div>
+                <div>
+                    <input type="submit" id="save" value="Сохранить">
+                    <input type="button" id="clear"  value="Очистить">
+                </div>
+                
+            </form>
         </div>
-        <div id="spisok">
-            <div>
-                <label for="title">Название</label> 
-                <input type="text" value="">
-            </div>
-            <div>
-                <label for="title">Способ питания</label> <!-- гетеротрофы -->
-                <input type="text" value="гетеротрофы">
-            </div>
-            <div>
-                <label for="title">Ядра в клетках</label> <!-- эукариоты -->
-                <input type="text" value="эукариоты">
-            </div>
-            <div>
-                <label for="title">Каркас</label> <!-- скелет -->
-                <input type="text" value="скелет">
-            </div>
-            <div>
-                <label for="title">Cистемы органов</label> <!-- нервная -->
-                <input type="text" value="нервная">
-            </div>
-            <div>
-                <label for="title">Симметрия тела</label> <!-- симметрично -->
-                <input type="text" value="симметрично">
-            </div>
-            <div>
-                <label for="title">Рост тела</label> <!-- Ограничен  -->
-                <input type="text" value="Ограничен">
-            </div>
-            <div>
-                <label for="title">Дыхание</label> 
-                <input type="text" value="">
-            </div>
-        </div>
-        <div class="save_clear">    
-            <input id="save" type="button" value="Сохранить">
-            <input id="clear" type="button" value="Удылить">
-        </div>
-
-    </form>
-
-
-    <div id="glavnaia_stranica">
-
+        <ol id="list-animals">
+            <ul class="head_list">
+                <li>Название</li>
+                <li>Способ питания</li>
+                <li>Ядра в клетках</li>
+                <li>Каркас</li>
+                <li>Cистемы органов</li>
+                <li>Симметрия тела</li>
+                <li>Рост тела</li>
+                <li>Дыхание</li>
+                <li>Прочее</li>
+                <li>Действие</li>
+            </ul>
+        </ol>
     </div>
-
-<script src="./script.js"></script>
-<script src="./fish.js"></script>
-<script src="./Mlekopitauchie.js"></script>
+    
+    <script src="./animals.js"></script>
+    <script src="./viewanimals.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>

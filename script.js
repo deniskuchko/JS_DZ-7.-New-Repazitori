@@ -1,52 +1,43 @@
-class Animals {
-    constructor(){
-        this._pitanie = `Гетеротрофы`;
-        this._iadro = `Эукариоты`;
-        this._karkas = `Скелет`;
-        this._systemOfOrgans = `Нервная`;
-        this._simetriaOfBody = `Гетеротрофы`;
-        this._rostOfBody = `Гетеротрофы`;
+document.querySelector('#mains').addEventListener('submit', function(event){
+    let name = document.querySelector('#name').value;
+    let pitanie = document.querySelector('#pitanie').value;
+    let iadro = document.querySelector('#iadro').value;
+    let karkas = document.querySelector('#karkas').value;
+    let organs = document.querySelector('#organs').value;
+    let simmetria = document.querySelector('#simmetria').value;
+    let rost = document.querySelector('#rost').value;
+    let dihanie = document.querySelector('#dihanie').value;
+
+    class Fish extends Animals{
+        constructor(name,dihanie){
+            super(pitanie, iadro, karkas, organs, simmetria, rost);
+            this.name = name;
+            this.dihanie = dihanie;
+        }
     }
-}
 
-let labels = document.querySelectorAll('label');
-let glavnaia_stranica = document.getElementById('glavnaia_stranica');
+    let baracuda = new Fish(name, pitanie, iadro, karkas, organs, simmetria, rost, dihanie);
+    let viewAnimals = new ViewAnimals();
 
-let valyes = document.querySelectorAll('input');
-let save = document.getElementById('save');
+    if(name === '' || dihanie === '' ){
+        alert('Введите все данные! Книга не добавлена!');
+    } else{
+        viewAnimals.addAnimals(baracuda);
+    }
 
-let select =document.getElementById('select');
-
-function element(){
-    let span = document.createElement('span');
-    span.className = 'numberOfSpisok';
-    span.innerHTML = 'Общее время кругов:';
-    document.getElementById('glavnaia_stranica').append(span);
-}
-document.getElementById('save').addEventListener('click', element);
-
-
-
-
-function showOption(el)
-{
-    console.log(el.options[el.selectedIndex].value);
-    let label = document.createElement('label');
-    let inputs = document.createElement('input');
-   
+    event.preventDefault();
     
-    if(el.options[el.selectedIndex].value == 'Рыбы'){
-        inputs.value = baracuda._name;
-        label.className = 'name';
-        label.innerHTML = 'Прочее';
-    } else {
-      
-        inputs.value = puma._name
-        label.className = 'name';
-        label.innerHTML = 'Прочее';
+});
+
+document.querySelector('ol').onclick = function(e) {    /* Удаление из списка элемента */
+    const btn = e.target.closest('.delete');
+    if (!btn) {
+      return;
     }
     
-    document.getElementById('spisok').append(label);
-    document.getElementById('spisok').append(inputs);
-    
+     btn.closest('ul').remove();
 }
+    
+/* class View extends ViewBooks{};
+  document.querySelector('#clear').addEventListener('click', View.clear()); */
+  

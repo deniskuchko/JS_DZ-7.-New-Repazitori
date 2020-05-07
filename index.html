@@ -10,39 +10,48 @@
 
     <div class="container">
         <div class="container_Forms">
+            <div class="element">
+                <label for="title">Животные</label>
+                <select  onchange="showOption(this)" name="select" >
+                    <option  value="Рыбы">Рыбы</option>
+                    <option  value="Млекопитающие">Млекопитающие</option>
+                </select>
+            </div>
             <form id="mains">
-                <div>
-                    <label for="name">Название </label>
-                    <input type="text" id="name" >
-                </div>
-                <div>
-                    <label for="pitanie">способ питания</label>
-                    <input type="text" id="pitanie" value="Гетеротрофы">
-                </div>
-                <div>
-                    <label for="iadro">Ядра в клетках</label>
-                    <input type="text" id="iadro" value="Эукариоты">
-                </div>
-                <div>
-                    <label for="karkas">Каркас</label>
-                    <input type="text" id="karkas" value="Скелет">
-                </div>
-                
-                <div>
-                    <label for="organs">Система органов</label>
-                    <input type="text" id="organs" value="Нервная">
-                </div>
-                <div>
-                    <label for="simmetria">Симметрия тела</label>
-                    <input type="text" id="simmetria" value="Симметрисное">
-                </div>
-                <div>
-                    <label for="rost">Рост тела</label>
-                    <input type="text" id="rost" value="Ограничен">
-                </div>
-                <div>
-                    <label for="dihanie">Дыхание</label>
-                    <input type="text" id="dihanie">
+                <div id="punkti">
+                    <div>
+                        <label for="name">Название </label>
+                        <input type="text" id="name" >
+                    </div>
+                    <div>
+                        <label for="pitanie">способ питания</label>
+                        <input type="text" id="pitanie" value="Гетеротрофы">
+                    </div>
+                    <div>
+                        <label for="iadro">Ядра в клетках</label>
+                        <input type="text" id="iadro" value="Эукариоты">
+                    </div>
+                    <div>
+                        <label for="karkas">Каркас</label>
+                        <input type="text" id="karkas" value="Скелет">
+                    </div>
+                    
+                    <div>
+                        <label for="organs">Система органов</label>
+                        <input type="text" id="organs" value="Нервная">
+                    </div>
+                    <div>
+                        <label for="simmetria">Симметрия тела</label>
+                        <input type="text" id="simmetria" value="Симметрисное">
+                    </div>
+                    <div>
+                        <label for="rost">Рост тела</label>
+                        <input type="text" id="rost" value="Ограничен">
+                    </div>
+                    <div>
+                        <label for="dihanie">Дыхание</label>
+                        <input type="text" id="dihanie">
+                    </div>
                 </div>
                 <div>
                     <input type="submit" id="save" value="Сохранить">

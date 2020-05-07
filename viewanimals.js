@@ -14,21 +14,13 @@ class ViewAnimals {
         <li>${type.simmetria}</li>
         <li>${type.rost}</li>
         <li>${type.dihanie}</li>
+        <li>${type.prochee}</li>
         <li><span class="delete">Удалить</span>/<span class="redact">Редактировать</span></li>`;
        
         listAll.appendChild(ulList);
     }
    
-    static clear() {
-        document.querySelector('#name').value = '';
-        document.querySelector('#pitanie').value = '';
-        document.querySelector('#iadro').value = '';
-        document.querySelector('#karkas').value = '';
-        document.querySelector('#organs').value = '';
-        document.querySelector('#simmetria').value = '';
-        document.querySelector('#rost').value = '';
-        document.querySelector('#outher').value = '';
-    } 
+    
 }
 ;
 

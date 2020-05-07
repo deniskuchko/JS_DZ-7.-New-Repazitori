@@ -11,7 +11,7 @@
 }
 
 .container_Forms{
-    display: flex;
+    display: inline-block;
     justify-content: space-between;
 }
 

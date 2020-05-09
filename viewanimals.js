@@ -19,7 +19,7 @@ class ViewAnimals {
        
         listAll.appendChild(ulList);
     }
-   
+   /*  */
     
 }
 ;

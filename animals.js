@@ -9,7 +9,7 @@ class Animals {
         this.rost = rost;
         this.prochee = prochee;
     }
-   
+   /*  */
 }
 
 

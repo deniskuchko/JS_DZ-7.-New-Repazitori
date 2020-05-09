@@ -9,7 +9,7 @@ document.querySelector('#mains').addEventListener('submit', function(event){
     let dihanie = document.querySelector('#dihanie').value;
 
     class Fish extends Animals{
-        constructor(name, dihanie){
+        constructor(name, dihanie){ 
             super(pitanie, iadro, karkas, organs, simmetria, rost);
             this.name = name;
             this.dihanie = dihanie;
@@ -27,7 +27,7 @@ document.querySelector('#mains').addEventListener('submit', function(event){
             return  this.name;
         } */
     };
-
+/*  */
     class Mlekopitanie extends Animals{
         constructor(name, dihanie){
             super(pitanie, iadro, karkas, organs, simmetria, rost);

@@ -9,7 +9,7 @@
 <body>
 
     <div class="container">
-        <div class="container_Forms">
+        <div class="container_Forms" >
             <div class="element">
                 <label for="title">Животные</label>
                 <select  onchange="showOption(this)" name="select" >
@@ -59,21 +59,26 @@
                 </div>
                 
             </form>
+        </div> 
+
+
+        <div class="show">
+            <input type="submit" id="create"  value="Создать">
+            <ol id="list-animals">
+                <ul class="head_list">
+                    <li>Название</li>
+                    <li>Способ питания</li>
+                    <li>Ядра в клетках</li>
+                    <li>Каркас</li>
+                    <li>Cистемы органов</li>
+                    <li>Симметрия тела</li>
+                    <li>Рост тела</li>
+                    <li>Дыхание</li>
+                    <li>Прочее</li>
+                    <li>Действие</li>
+                </ul>
+            </ol>
         </div>
-        <ol id="list-animals">
-            <ul class="head_list">
-                <li>Название</li>
-                <li>Способ питания</li>
-                <li>Ядра в клетках</li>
-                <li>Каркас</li>
-                <li>Cистемы органов</li>
-                <li>Симметрия тела</li>
-                <li>Рост тела</li>
-                <li>Дыхание</li>
-                <li>Прочее</li>
-                <li>Действие</li>
-            </ul>
-        </ol>
     </div>
     
     <script src="./animals.js"></script>

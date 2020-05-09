@@ -15,7 +15,7 @@ class ViewAnimals {
         <li>${type.rost}</li>
         <li>${type.dihanie}</li>
         <li>${type.prochee}</li>
-        <li><span class="delete">Удалить</span>/<span class="redact">Редактировать</span></li>`;
+        <li><span class="delete">Удалить</span>/<span class="redact" >Редактировать</span></li>`;
        
         listAll.appendChild(ulList);
     }

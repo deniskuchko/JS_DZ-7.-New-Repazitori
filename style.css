@@ -1,32 +1,12 @@
-.head_list, ul{
-    display: flex;
-    justify-content: space-between;
+.show{
+    display: none;
+}
+    
+ul{
+    margin: 10px auto;
 }
 
-.head_list li{
-    display: inline-flex;
-    justify-content: center;
-   /*  width: 20%; */
-    color: blue;
-}
 
-.container_Forms{
-    display: inline-block;
-    justify-content: space-between;
-}
 
-.error{
-    background-color: red;
-    color: aqua;
-}
-.ok{
-    background-color: rgb(6, 243, 6);
-    color: aqua;
-}
-input{
-    display:block;
-}
 
-#list-animals, ul.head_list{
-    padding: 0;
-}
+

@@ -13,9 +13,21 @@ document.querySelector('#mains').addEventListener('submit', function(event){
             super(pitanie, iadro, karkas, organs, simmetria, rost);
             this.name = name;
             this.dihanie = dihanie;
-            
         }
-    }
+        /* set name(name){
+            this.name = name;
+        }
+        set dihanie(dihanie){
+            this.dihanie = dihanie;
+        }
+        get dihanie(){
+            return  this.dihanie;
+        }
+        get name(){
+            return  this.name;
+        } */
+    };
+
     class Mlekopitanie extends Animals{
         constructor(name, dihanie){
             super(pitanie, iadro, karkas, organs, simmetria, rost);
@@ -28,7 +40,7 @@ document.querySelector('#mains').addEventListener('submit', function(event){
     let puma = new Mlekopitanie(name, pitanie, iadro, karkas, organs, simmetria, rost, dihanie);
     let viewAnimals = new ViewAnimals();
     
-    
+    console.log(baracuda.name);
     if(name === '' ){
         alert('Введите все данные! Книга не добавлена!');
     } else{
@@ -38,6 +50,11 @@ document.querySelector('#mains').addEventListener('submit', function(event){
     
     event.preventDefault();
     
+    document.querySelector('.redact').addEventListener('click', function (){ /* нажатие на  span Редактироваь */
+        document.querySelector('.container_Forms').style.display = 'inline-block';
+        document.querySelector('.show').style.display = 'none';
+    }); 
+    console.log(baracuda.name);
     
 });
 document.querySelector('#clear').onclick = function clear() { /* кнопка "Очистить" */
@@ -85,6 +102,28 @@ function showOption(el){
     nodes[i].parentNode.removeChild(nodes[i]);
 } ;
 
+document.querySelector('#save').addEventListener('click', function (){ /* нажатие на кнопку сохранить */
+    document.querySelector('.container_Forms').style.display = 'none';
+    document.querySelector('.show').style.display = 'inline-block';
+}); 
+
+document.querySelector('#create').addEventListener('click', function (){ /* нажатие на кнопку Создать */
+    document.querySelector('.container_Forms').style.display = 'inline-block';
+    document.querySelector('.show').style.display = 'none';
+}); 
+
+
+
+/* var save = document.getElementById('save');
+save.onclick = function(){
+    addMenu();
+}
+
+function addMenu(){
+    document.getElementsByClassName("container_Forms").style.display = 'none';
+    document.getElementsByClassName("show").style.display = 'block';
+
+}  */
 /* class View extends ViewBooks{};
   document.querySelector('#clear').addEventListener('click', View.clear()); */
  /*  
